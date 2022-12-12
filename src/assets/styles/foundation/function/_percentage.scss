@@ -1,0 +1,12 @@
+@use 'sass:math';
+
+@function per($child, $parent) {
+  @return math.percentage(math.div($child, $parent));
+}
+
+/* Usage Examples/
+.p-box {
+  width: per(120, 390);
+  height: per(120, 844);
+}
+*/
